@@ -22,7 +22,6 @@ def processor():
         questions.append(faq_question.question_abstract)
         primary_keys.append(faq_question.id)
 
-    # print(questions)
     # Create the pandas DataFrame with column name is provided explicitly
     df = pd.DataFrame(questions, columns=["Questions"])
     df.fillna("", inplace=True)

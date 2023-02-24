@@ -27,4 +27,5 @@ def read_root():
 
 @app.get("/get_chatbot_response")
 def get_chatbot_response_func(question: str):
-    return {"questions_faq_id":get_chatbot_response(question)}
+    return get_chatbot_response(question)
+    # return {"questions_faq_id":get_chatbot_response(question)}
